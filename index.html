@@ -1,301 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <link rel="stylesheet" type="text/css" href="animation.css">
-        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Alegreya+Sans+SC:300,400" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <meta name="viewport" content="width=device-width">
-        <script src="typed.js"></script>
-        <script>
-            setTimeout(function() {
-                $('#loader').fadeOut();
-            }, 8100);
-            setTimeout(function() {
-                $('#site').fadeIn();
-            }, 8500); 
-        </script>
-    </head>
-    <body>
-        <div id="loader">
-            <object id="logoText" type="image/svg+xml" data="LogoText.svg">RK Logo</object>
-        </div>
-        <div id="site">
-            <div id="home">
-                <div class="nav">
-                    <img id="headImg" src="LogoTextVert.svg">
-                    <div class="contact">
-                    </div>
-                    <section id="scroll">
-                        <a href=#portfolio><span></span>Scroll</a>
-                    </section>
-                </div>
-            </div>
-            <div id="portfolio">
-                <div class="tabs">
-                    <h1 onclick="openTab(event, 'web')" id="defaultOpen" class="title">Development</h1>
-                    <h1 onclick="openTab(event, 'graphic')" class="title">Design</h1>
-                </div>
-                <div id="web" class="tabcontent activeTab">
-                    <div class="container">
-                        <div class="left txt">
-                            <div class="description">
-                                <a href="http://fasttrek.org/"><h2>FastTrek</h2></a>
-                                <p>I am currently a developer at FastTrek, building and improving their Wordpress powered site. I have been with FastTrek since February 2018.</p>
-                            </div>
-                        </div>
-                        <div class="right img" id="gallery1">
-                            <img class="slide fade" src="imgs/fasttrek/fasttrek1.png">
-                            <img class="slide fade" src="imgs/fasttrek/fasttrek2.png">
-                            <img class="slide fade" src="imgs/fasttrek/fasttrek3.png">
-                            <button class="prev" onclick="plusDivs(-1, '1')">&#10094;</button>
-                            <button class="next" onclick="plusDivs(1, '1')">&#10095;</button>
-                            <span class="dot" onclick="currentDiv(1, '1')"></span> 
-                            <span class="dot" onclick="currentDiv(2, '1')"></span> 
-                            <span class="dot" onclick="currentDiv(3, '1')"></span> 
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="left img" id="gallery2">
-                            <img class="slide fade" src="imgs/concepts/concepts1.png">
-                            <img class="slide fade" src="imgs/concepts/concepts2.png">
-                            <img class="slide fade" src="imgs/concepts/concepts3.png">
-                            <button class="prev" onclick="plusDivs(-1, '2')">&#10094;</button>
-                            <button class="next" onclick="plusDivs(1, '2')">&#10095;</button>
-                            <span class="dot" onclick="currentDiv(1, '2')"></span> 
-                            <span class="dot" onclick="currentDiv(2, '2')"></span> 
-                            <span class="dot" onclick="currentDiv(3, '2')"></span> 
-                        </div>
-                        <div class="right txt">
-                            <div class="description">
-                                <a href="https://rkdiscovers.com/bootstrap/"><h2>Concepts In Tile</h2></a>
-                                <p>In early 2018, I built a website powered by Wordpress for a tiling company in New York. I continue to design upgrades as well as perform maintenance on the site. This website has since been taken down, the link provided takes you to a mock-up I made prior to the final delivery.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="left txt">
-                            <div class="description">
-                                <a href=""><h2>Roger Williams University - Bikes</h2></a>
-                                <p>During my last semester at RWU, I collaborated with other classmates in one of our courses to create a website promoting bike safety in Bristol, Rhode Island. This website has since been taken down.</p>
-                            </div>
-                        </div>
-                        <div class="right img" id="gallery3">
-                            <img class="slide fade" src="imgs/bikes/bikes1.png">
-                            <img class="slide fade" src="imgs/bikes/bikes2.png">
-                            <img class="slide fade" src="imgs/bikes/bikes3.png">
-                            <button class="prev" onclick="plusDivs(-1, '3')">&#10094;</button>
-                            <button class="next" onclick="plusDivs(1, '3')">&#10095;</button>
-                            <span class="dot" onclick="currentDiv(1, '3')"></span> 
-                            <span class="dot" onclick="currentDiv(2, '3')"></span> 
-                            <span class="dot" onclick="currentDiv(3, '3')"></span>
-                        </div>
-                    </div>
-                    <h1 id="subTitle">Academic Projects</h1>
-                    <div class="container">
-                        <div class="left img" id="gallery4">
-                            <img class="slide fade" src="imgs/english/english1.png">
-                            <img class="slide fade" src="imgs/english/english2.png">
-                            <img class="slide fade" src="imgs/english/english3.png">
-                            <button class="prev" onclick="plusDivs(-1, '4')">&#10094;</button>
-                            <button class="next" onclick="plusDivs(1, '4')">&#10095;</button>
-                            <span class="dot" onclick="currentDiv(1, '4')"></span> 
-                            <span class="dot" onclick="currentDiv(2, '4')"></span> 
-                            <span class="dot" onclick="currentDiv(3, '4')"></span>                     
-                        </div>
-                        <div class="right txt">
-                            <div class="description">
-                                <a href="https://rkdiscovers.com/wp/lit/"><h2>Roger Williams English Literature</h2></a>
-                                <p>I led a team of peers in my last semester, in which we submitted a bid for our school's English Literature page redesign.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="left txt">
-                            <div class="description">
-                                <a href=""><h2>SnapBoston</h2></a>
-                                <p>SnapBoston was a website created during a PHP exercise. It was built using PHP, HTML, and CSS. It is currently not live.</p>
-                            </div>
-                        </div>
-                        <div class="right img" id="gallery5">
-                            <img class="slide fade" src="imgs/snap/snap1.png">
-                            <img class="slide fade" src="imgs/snap/snap2.png">
-                            <button class="prev" onclick="plusDivs(-1, '5')">&#10094;</button>
-                            <button class="next" onclick="plusDivs(1, '5')">&#10095;</button>
-                            <span class="dot" onclick="currentDiv(1, '5')"></span> 
-                            <span class="dot" onclick="currentDiv(2, '5')"></span> 
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="left img" id="gallery6">
-                            <img class="slide fade" src="imgs/rkphotos/rkphotos1.png">
-                            <img class="slide fade" src="imgs/rkphotos/rkphotos2.png">
-                            <img class="slide fade" src="imgs/rkphotos/rkphotos3.png">
-                            <button class="prev" onclick="plusDivs(-1, '6')">&#10094;</button>
-                            <button class="next" onclick="plusDivs(1, '6')">&#10095;</button>
-                            <span class="dot" onclick="currentDiv(1, '6')"></span> 
-                            <span class="dot" onclick="currentDiv(2, '6')"></span> 
-                            <span class="dot" onclick="currentDiv(3, '6')"></span>                     
-                        </div>
-                        <div class="right txt">
-                            <div class="description">
-                                <a href="https://www.rkdiscovers.com/photo/"><h2>RKPhotos</h2></a>
-                                <p>RKPhotos was the first site I created for an academic assignment. The site was built using HTML and CSS. The site serves as a portfolio for some of my original photography.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-                <div id="graphic" class="tabcontent">
-                <h1 id="subTitle">Branding Projects</h1>
-                <div class="container">
-                        <div class="left txt">
-                            <div class="description">
-                                <a href=""><h2>Sea Turtle Conservancy</h2></a>
-                                <p>As an assignment for a graphic design class I selected a non-profit organization and rebranded some of their promotional material. I chose the Sea Turtle Conservancy based out of Florida. Part of the project involved creating a type only logo as well as stationery for the business.</p>
-                            </div>
-                        </div>
-                        <div class="right img" id="gallery7">
-                            <img class="slide fade" src="imgs/turtle/turtle1.png">
-                            <img class="slide fade" src="imgs/turtle/turtle2.png">
-                            <img class="slide fade" src="imgs/turtle/turtle3.png">
-                            <img class="slide fade" src="imgs/turtle/turtle4.png">
-                            <img class="slide fade" src="imgs/turtle/turtle5.png">
-                            <img class="slide fade" src="imgs/turtle/turtle6.png">
-                            <img class="slide fade" src="imgs/turtle/turtle7.png">
-                            <img class="slide fade" src="imgs/turtle/turtle8.png">
-                            <button class="prev" onclick="plusDivs(-1, '7')">&#10094;</button>
-                            <button class="next" onclick="plusDivs(1, '7')">&#10095;</button>
-                            <span class="dot" onclick="currentDiv(1, '7')"></span> 
-                            <span class="dot" onclick="currentDiv(2, '7')"></span> 
-                            <span class="dot" onclick="currentDiv(3, '7')"></span>
-                            <span class="dot" onclick="currentDiv(4, '7')"></span> 
-                            <span class="dot" onclick="currentDiv(5, '7')"></span> 
-                            <span class="dot" onclick="currentDiv(6, '7')"></span>
-                            <span class="dot" onclick="currentDiv(7, '7')"></span>
-                            <span class="dot" onclick="currentDiv(8, '7')"></span>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="left img" id="gallery8">
-                            <img class="slide fade" src="imgs/timeless/timeless1.png">
-                            <img class="slide fade" src="imgs/timeless/timeless2.png">
-                            <img class="slide fade" src="imgs/timeless/timeless3.png">
-                            <img class="slide fade" src="imgs/timeless/timeless4.png">
-                            <img class="slide fade" src="imgs/timeless/timeless5.png">
-                            <img class="slide fade" src="imgs/timeless/timeless6.png">
-                            <img class="slide fade" src="imgs/timeless/timeless7.png">
-                            <img class="slide fade" src="imgs/timeless/timeless8.png">
-                            <button class="prev" onclick="plusDivs(-1, '8')">&#10094;</button>
-                            <button class="next" onclick="plusDivs(1, '8')">&#10095;</button>
-                            <span class="dot" onclick="currentDiv(1, '8')"></span> 
-                            <span class="dot" onclick="currentDiv(2, '8')"></span> 
-                            <span class="dot" onclick="currentDiv(3, '8')"></span>
-                            <span class="dot" onclick="currentDiv(4, '8')"></span> 
-                            <span class="dot" onclick="currentDiv(5, '8')"></span> 
-                            <span class="dot" onclick="currentDiv(6, '8')"></span>
-                            <span class="dot" onclick="currentDiv(7, '8')"></span>
-                            <span class="dot" onclick="currentDiv(8, '8')"></span>
-                        </div>
-                        <div class="right txt">
-                            <div class="description">
-                                <a href=""><h2>Timeless Grind</h2></a>
-                                <p>For another academics project, I was tasked with designing an entire coffee shop from scratch. Some of the steps included were creating a logo that included type and an icon that could be used separately. In addition to the logo, I created different signage, designs for cups, and other accessories.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="left txt">
-                            <div class="description">
-                                <a href=""><h2>Infinity</h2></a>
-                                <p>For a latter assignment, I created a fictitious clothing company. During the course of this project I created an original font used for the logo. Additionally, I designed a lot of bags and labels that would be used in the store.</p>
-                            </div>
-                        </div>
-                        <div class="right img" id="gallery9">
-                            <img class="slide fade" src="imgs/infinity/infinity1.png">
-                            <img class="slide fade" src="imgs/infinity/infinity2.png">
-                            <img class="slide fade" src="imgs/infinity/infinity3.png">
-                            <img class="slide fade" src="imgs/infinity/infinity4.png">
-                            <img class="slide fade" src="imgs/infinity/infinity5.png">
-                            <button class="prev" onclick="plusDivs(-1, '9')">&#10094;</button>
-                            <button class="next" onclick="plusDivs(1, '9')">&#10095;</button>
-                            <span class="dot" onclick="currentDiv(1, '9')"></span> 
-                            <span class="dot" onclick="currentDiv(2, '9')"></span> 
-                            <span class="dot" onclick="currentDiv(3, '9')"></span>
-                            <span class="dot" onclick="currentDiv(4, '9')"></span> 
-                            <span class="dot" onclick="currentDiv(5, '9')"></span> 
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="left img" id="gallery10">
-                            <img class="slide fade" src="imgs/neptune/neptune1.png">
-                            <img class="slide fade" src="imgs/neptune/neptune2.png">
-                            <img class="slide fade" src="imgs/neptune/neptune3.png">
-                            <img class="slide fade" src="imgs/neptune/neptune4.png">
-                            <img class="slide fade" src="imgs/neptune/neptune5.png">
-                            <button class="prev" onclick="plusDivs(-1, '10')">&#10094;</button>
-                            <button class="next" onclick="plusDivs(1, '10')">&#10095;</button>
-                            <span class="dot" onclick="currentDiv(1, '10')"></span> 
-                            <span class="dot" onclick="currentDiv(2, '10')"></span> 
-                            <span class="dot" onclick="currentDiv(3, '10')"></span>
-                            <span class="dot" onclick="currentDiv(4, '10')"></span> 
-                            <span class="dot" onclick="currentDiv(5, '10')"></span>                     
-                        </div>
-                        <div class="right txt">
-                            <div class="description">
-                                <a href=""><h2>Neptune's Kitchen</h2></a>
-                                <p>For my final project, I created a fictional food truck. The design of the truck included a menu of 10 different and original items. Further, I designed signs and banners as well as the truck itself</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
-            //TABS
-            document.getElementById("defaultOpen").click();
-            function openTab(evt, tabName) {
-                var i, tabcontent, tabtitle;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-                tabtitle = document.getElementsByClassName("title");
-                for (i = 0; i < tabtitle.length; i++) {
-                    tabtitle[i].classList.remove("activeTitle");
-                }
-                document.getElementById(tabName).style.display = "block";
-                evt.currentTarget.classList.add("activeTitle");
-            }
-            
-            //SLIDESHOW
-            slideIndex = 1;
-            var galleries = document.querySelectorAll(' .img');
-            for (i = 0 ; i < galleries.length ; i++) {
-                showDivs(slideIndex, i + 1);
-            }     
-            function plusDivs(n, gallery) {
-                showDivs(slideIndex += n, gallery);
-            }
-            function showDivs(n, gallery) {
-                var i;
-                var slideshow = document.getElementById("gallery" + gallery);
-                var x = slideshow.getElementsByClassName("slide");
-                var dots = slideshow.getElementsByClassName("dot");
-                if (n > x.length) {slideIndex = 1}    
-                if (n < 1) {slideIndex = x.length}
-                for (i = 0; i < x.length; i++) {
-                    x[i].classList.remove('active-slide');
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].classList.remove('active');
-                }
-                x[slideIndex-1].classList.add('active-slide');
-                dots[slideIndex-1].classList.add('active');
-            }
-            
-            function currentDiv(n, gallery) {
-                showDivs(slideIndex = n, gallery);
-            }
-        </script>
-    </body>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<div class="stars"></div>
+<div class="twinkle"></div>
+<div class="clouds"></div>
+<div class="clouds2"></div>
+
+<div class="title">
+    <h1 class="name">Ryan Kadlick</h1>
+    <div class="icons">
+
+        <a href="https://www.linkedin.com/in/ryankadlick/">
+            <i class="fab fa-linkedin"></i>
+            <span class="label">LinkedIn</span>
+        </a>
+        <a href="https://github.com/rkadlick">
+            <i class="fab fa-github"></i>
+            <span class="label">GitHub</span>
+        </a>
+        <a href="https://codepen.io/rykadlick">
+            <i class="fab fa-codepen"></i>
+            <span class="label">CodePen</span>
+        </a>
+        <a href="">
+            <i class="fas fa-folder-open"></i>
+            <span class="label">Projects</span>
+        </a>
+        <a href="">
+            <i class="fas fa-file"></i>
+            <span class="label">Resume</span>
+        </a>
+    </div>
+</div>
+
 </html>
