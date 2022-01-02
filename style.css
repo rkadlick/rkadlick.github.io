@@ -36,7 +36,7 @@ html, body {
   margin: 0;
 }
 
-a,a:hover,a:click, a:visited{
+a,a:hover,a:link,a:visited,a:active{
   border:none;
   outline:none;
   text-decoration:none;
@@ -143,7 +143,7 @@ i{
     width: 48%;
   }
   i{
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -155,7 +155,7 @@ i{
     width: 53%;
   }
   i{
-    font-size: 1.75rem;
+    font-size: 2.2rem;
   }
 }
 
