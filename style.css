@@ -31,7 +31,6 @@
   to {background-position:10000px 0;}
 }
 
-
 html, body {
   height: 100%;
   margin: 0;
@@ -136,7 +135,7 @@ i{
   opacity: 0;
 }
 
-@media screen and (max-width: 900px) {
+@media handheld, screen and (max-width: 900px) {
   .name {
     font-size: 4rem;
   }
@@ -148,7 +147,7 @@ i{
   }
 }
 
-@media screen and (max-width: 550px) {
+@media handheld, screen and (max-width: 550px) {
   .name {
     font-size: 3rem;
   }
@@ -160,8 +159,4 @@ i{
   }
 }
 
-@media screen and (max-width: 400px) {
-  .icons{
-    width: 78%;
-  }
-}
+
