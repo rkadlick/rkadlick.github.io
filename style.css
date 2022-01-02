@@ -153,10 +153,24 @@ i{
   }
   .icons{
     width: 53%;
+  flex-direction: column;
+  text-align: left;
   }
   i{
     font-size: 2.2rem;
+    margin-bottom: 2rem;
+    width: 35px;
+    text-align: center;
   }
+  .label{
+    display: inline-block;
+    margin-left: 13px;
+    opacity: 100;
+  }
+  a, a:hover, a:link, a:visited, a:active {
+    width: 60%;
+    height: 13%;
+}
 }
 
 
