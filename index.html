@@ -1,45 +1,131 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-
-<head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    
+        <div class="watermark1">RYAN</div>
+        <div class="watermark2">RYAN</div>
+        <nav>
+            <a class="nav-link logo" id="home"><img id="r-logo" src="imgs/logoR.svg"></a>
+            <a class="nav-link current" id="home">Home</a>
+            <a class="nav-link" id="about">About Me</a>
+            <a class="nav-link" id="projects">Projects</a>
+            <a class="nav-link" id="links">Links</a>
+            <img class="dark-mode" id="moon" src="imgs/moon.svg" />
+            <img class="dark-mode hide" id="sun" src="imgs/sun.svg" />
+        </nav>
+        <div id="hLine"></div>
+       <div class="home section">
+           <h1 id="name">Ryan Kadlick</h1>
+           <h2 id="title">Designer | Developer</h2>
+           <div class="icons hide">
 
-<div class="stars"></div>
-<div class="twinkle"></div>
-<div class="clouds"></div>
-<div class="clouds2"></div>
+            <a href="https://www.linkedin.com/in/ryankadlick/">
+                <i class="fab fa-linkedin" id="linkedin"></i>
+                <span class="label">LinkedIn</span>
+            </a>
+            <a href="https://github.com/rkadlick">
+                <i class="fab fa-github" id="github"></i>
+                <span class="label">GitHub</span>
+            </a>
+            <a href="https://codepen.io/rykadlick">
+                <i class="fab fa-codepen" id="codepen"></i>
+                <span class="label">CodePen</span>
+            </a>
+            <a href="https://www.freecodecamp.org/rymk">
+                <i class="fab fa-free-code-camp" id="fcc"></i>
+                <span class="label">FCC</span>
+            </a>
+        </div>
+       </div>
 
-<div class="title">
-    <h1 class="name">Ryan Kadlick</h1>
-    <div class="icons">
 
-        <a href="https://www.linkedin.com/in/ryankadlick/">
-            <i class="fab fa-linkedin"></i>
-            <span class="label">LinkedIn</span>
-        </a>
-        <a href="https://github.com/rkadlick">
-            <i class="fab fa-github"></i>
-            <span class="label">GitHub</span>
-        </a>
-        <a href="https://codepen.io/rykadlick">
-            <i class="fab fa-codepen"></i>
-            <span class="label">CodePen</span>
-        </a>
-        <a href="">
-            <i class="fas fa-folder-open"></i>
-            <span class="label">Projects</span>
-        </a>
-        <a href="">
-            <i class="fas fa-file"></i>
-            <span class="label">Resume</span>
-        </a>
-    </div>
-</div>
+       <main>
+           <section class="about section hide">
+               <p>I am a current graduate student persuing a Masters degree in Computer Science at University of Massachusetts - Boston that is looking to pursue a career in design and development. I had real life experience creating and designing a user experience during my years at school and am continuing to do so now in my current jobs. Challenges and adventure excite me, I would love to learn more and grow as a person in a variety of different work settings. I appreciate all opportunities that would deepen my current understanding and help me learn something new.</p>
+           </section>
+           <section class="projects section hide">
+               <ul id="filter-list">
+                   <li class="filter-item" id="html">HTML</li>
+                   <li class="filter-item" id="css">CSS</li>
+                   <li class="filter-item" id="js">Javascript</li>
+                   <li class="filter-item" id="java">Java</li>
+                   <li class="filter-item" id="uiux">UI/UX</li>
+               </ul>
+               <div class="flexbox">
+
+                  <div class="project-tile html css uiux">
+                  <h4 class="project-title">Roommate Finder Application<i class="fas fa-chevron-down"></i></h4>
+                  <ul id="inner-list">
+                    <li class="inner-item" id="html">HTML</li>
+                    <li class="inner-item" id="css">CSS</li>
+                    <li class="inner-item" id="uiux">UI/UX</li>
+                  </ul>
+                  <a href="https://sites.google.com/view/umbfinders/home/home" class="project-link hide">View Project</a>
+                <p class="project-info hide">In this project I worked in a team of 3 to design and implement a User Interface. We decided to build an interface for a mobile application where users can search for potential roommates in their local area. The final implementation was created in HTML and CSS, it was created for a mobile screen, but is also responsive to a desktop.</p>
+                </div>
+
+                </div>
+
+           </section>
+           <section class="links section hide">
+
+              <div class="link-tile">
+                <a class="link-link" href="https://www.linkedin.com/in/ryankadlick/">
+                  <span class="link-spanner"></span>
+                </a>
+                <h4 class="link-title"><i class="fab fa-linkedin"></i> LinkedIn</h4>
+              </div>
+              <div class="link-tile">
+                <a class="link-link" href="https://github.com/rkadlick">
+                  <span class="link-spanner"></span>
+                </a>
+                <h4 class="link-title"><i class="fab fa-github"></i> GitHub</h4>
+              </div>
+              <div class="link-tile">
+                <a class="link-link" href="https://codepen.io/rykadlick">
+                  <span class="link-spanner"></span>
+                </a>
+                <h4 class="link-title"><i class="fab fa-codepen"></i> CodePen</h4>
+              </div>
+              <div class="link-tile">
+                <a class="link-link" href="https://www.freecodecamp.org/rymk">
+                  <span class="link-spanner"></span>
+                </a>
+                <h4 class="link-title"><i class="fab fa-free-code-camp"></i> FreeCodeCamp</h4>
+              </div>
+
+           </section>
+       </main>
+
+       <footer>
+           <div id="footer">
+                <p>Ryan Kadlick &#169;</p>
+                <p>All Rights Reserved - 2022</p>
+           </div>
+       </footer>
+
+
+    </body>
 
 </html>
+<script src="js/script.js"></script>
