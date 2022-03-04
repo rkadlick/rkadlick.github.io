@@ -363,20 +363,26 @@ footer{
     margin-bottom: 10px;
 }
 
-#footer{
-
-}
-
 #footer > p {
     margin: 0;
     color: var(--secondary);
 }
 
+/**********************
+* Mobile Styling *
+***********************/
+
 
 @media screen and (max-width: 660px) {
+    .watermark1{
+        bottom: 0;
+        top: revert;
+    }
     .watermark2{
-        left: -5.5rem;
+        left: 1.5rem;
         right: 0;
+        font-size: 22rem;
+        top: -3.75rem;
     }
     .nav-link{
         margin-right: 0.5rem;
@@ -385,9 +391,24 @@ footer{
     }
     nav{
         margin-right: 0;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        padding: 0px;
+        margin: 3px;
     }
-    #moon, #sun{
-        margin-left: 1rem;
+
+    #hLine{
+        bottom: 3.5rem;
+        position: fixed;
+    }
+
+    .home{
+        margin-top: 50%;
+    }
+
+    #description{
+        margin-top: 50%;
     }
 
     .filter-item{
@@ -397,6 +418,13 @@ footer{
     #filter-list{
         flex-wrap: wrap;
         justify-content: space-around;
+        position: absolute;
+        bottom: 3.5rem;
+    }
+
+    .flexbox{
+        position: absolute;
+        bottom: 7.5rem;
     }
 
     .project-title{
@@ -412,11 +440,25 @@ footer{
         justify-content: center;
     }
 
+    .links{
+        bottom: 4.5rem;
+        position: absolute;
+        width: 100%;
+    }
+
     .link-tile{
         width: 75%;
         transition: all 0.5s;
     }
     .link-title{
         font-size: 1.5rem;
+    }
+
+    footer{
+        top: 0;
+        right: 0;
+        left: revert;
+        bottom: revert;
+        text-align: right;
     }
 }
