@@ -86,12 +86,12 @@ function pageSelection(page) {
   var home = document.querySelectorAll("#home");
   home[1].classList.add("current");
   
-  history.pushState(null, "", id);
+  history.pushState(null, "", "#" + id);
     
   }else{
     page.classList.add("current");
 
-    history.pushState(null, "", id);
+    history.pushState(null, "", "#" + id);
   }
 }
 
