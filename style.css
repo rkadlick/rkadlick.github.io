@@ -13,7 +13,9 @@
     --teal: #05d093;
 }
 
-.dark{
+/******** Dark Mode Colors *******
+    These colors get swapped with the root colors above on 'Dark mode'.
+
     --background: #111111;
     --primary: #eeeeee;
     --secondary: #cccccc;
@@ -26,7 +28,12 @@
     --yellow: #e4cb58;
     --green: #8fc866; 
     --teal: #19bc8b;
-}
+*****************************/
+
+/**********************
+* General Components *
+***********************/
+
 html{
     overflow-x: hidden;
     background-color: var(--background);
@@ -37,6 +44,54 @@ body{
     width: 100%;
     margin: auto;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+nav{
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+h1{
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+h2{
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: var(--secondary);
+}
+
+p{
+    font-family: 'Poppins', arial;
+    color: var(--secondary);
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+i{
+    font-size: 2rem;
+    color: var(--primary);
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0 0 10px 10px;
+}
+
+/**********************
+* Sitewide *
+***********************/
+
+.hide{
+    display: none;
 }
 
 .watermark1, .watermark2 {
@@ -63,24 +118,24 @@ body{
     right: -1em;
 }
 
+#footer > p {
+    margin: 0;
+    color: var(--secondary);
+}
+
+/**********************
+* Navigation *
+***********************/
+
 #moon, #sun{
-    width: 35px;
     color: var(--primary);
     margin-left: auto;
     cursor: pointer;
 }
 
-#r-logo{
+#r-logo, #moon, #sun{
     width: 35px;
 }
-
-nav{
-    padding: 3px;
-    display: flex;
-    align-items: center;
-    margin-right: 1rem;
-}
-
 
 .nav-link{
     margin-right: 1rem;
@@ -91,39 +146,20 @@ nav{
     color: var(--primary);
 }
 
-
 .current{
     background-color: var(--primary);
     color: var(--background);
 }
 
-#hLine{
+#h-line{
     width: 100%;
-background-color: var(--secondary);
-height: 1px;
+    background-color: var(--secondary);
+    height: 1px;
 }
 
-
-h1{
-    font-weight: 500;
-    font-size: 2rem;
-    color: var(--primary);
-}
-
-h2{
-    font-weight: 300;
-    font-size: 1.5rem;
-    color: var(--secondary);
-}
-
-
-p{
-    font-family: 'Poppins', arial;
-    color: var(--secondary);
-    font-weight: 300;
-    font-size: .9rem;
-}
-
+/**********************
+* Section - Home *
+***********************/
 
 .home{
     text-align: center;
@@ -137,21 +173,12 @@ p{
     margin-top: .3rem;
 }
 
-
 .icons{
     margin: auto;
 }
 
 .icons > a{
     text-decoration: none;
-}
-  
-
-i{
-    font-size: 2rem;
-    color: var(--primary);
-    margin-left: 8px;
-    margin-right: 8px;
 }
   
 .label{
@@ -162,6 +189,9 @@ i{
     display: none;
 }
 
+/**********************
+* Section - About *
+***********************/
 
 .about{
     width: 95%;
@@ -169,6 +199,10 @@ i{
     margin-left: 1rem;
     margin-top: 3rem;
 }
+
+/**********************
+* Section - Projects *
+***********************/
 
 .flexbox{
     display: flex;
@@ -200,7 +234,6 @@ i{
     font-weight: 600;
 }
 
-
 .project-title > i {
     font-size: inherit;
     color: var(--primary);
@@ -217,9 +250,9 @@ i{
 
 .filter-title{
     margin: auto 0 auto 1em;
-font-size: 1em;
-color: var(--secondary);
-font-weight: 400;
+    font-size: 1em;
+    color: var(--secondary);
+    font-weight: 400;
 }
 
 #filter-list{
@@ -234,56 +267,6 @@ font-weight: 400;
     padding: 7px 7px 4px 7px;
     cursor: pointer;
     transition: all 0.3s;
-}
-
-#html{
-    color: var(--purple);
-    border: solid 2px var(--purple);
-}
-
-#html.pressed, #html.inner-item{
-    color: var(--background);
-    background-color: var(--purple);
-}
-
-#css{
-    color: var(--pink);
-    border: solid 2px var(--pink);
-}
-
-#css.pressed, #css.inner-item{
-    color: var(--background);
-    background: var(--pink);
-}
-
-#js{
-    color: var(--red);
-    border: solid 2px var(--red);
-}
-
-#js.pressed, #js.inner-item{
-    color: var(--background);
-    background-color: var(--red);
-}
-
-#java{
-    color: var(--orange);
-    border: solid 2px var(--orange);
-}
-
-#java.pressed, #java.inner-item{
-    color: var(--background);
-    background-color: var(--orange);
-}
-
-#uiux{
-    color: var(--yellow);
-    border: solid 2px var(--yellow);
-}
-
-#uiux.pressed, #uiux.inner-item{
-    color: var(--background);
-    background-color: var(--yellow);
 }
 
 #inner-list{
@@ -306,9 +289,63 @@ font-weight: 400;
     padding: 7px 7px 4px 7px;
 }
 
-.hide{
-    display: none;
-}
+    /**********************
+    * Filter Tabs *
+    ***********************/
+
+        #html{
+            color: var(--purple);
+            border: solid 2px var(--purple);
+        }
+
+        #html.pressed, #html.inner-item{
+            color: var(--background);
+            background-color: var(--purple);
+        }
+
+        #css{
+            color: var(--pink);
+            border: solid 2px var(--pink);
+        }
+
+        #css.pressed, #css.inner-item{
+            color: var(--background);
+            background: var(--pink);
+        }
+
+        #js{
+            color: var(--red);
+            border: solid 2px var(--red);
+        }
+
+        #js.pressed, #js.inner-item{
+            color: var(--background);
+            background-color: var(--red);
+        }
+
+        #java{
+            color: var(--orange);
+            border: solid 2px var(--orange);
+        }
+
+        #java.pressed, #java.inner-item{
+            color: var(--background);
+            background-color: var(--orange);
+        }
+
+        #uiux{
+            color: var(--yellow);
+            border: solid 2px var(--yellow);
+        }
+
+        #uiux.pressed, #uiux.inner-item{
+            color: var(--background);
+            background-color: var(--yellow);
+        }
+
+/**********************
+*  Section - Links  *
+***********************/
 
 .link-tile{
     width: 50%;
@@ -355,19 +392,6 @@ font-weight: 400;
     color: var(--primary);
 }
 
-footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
-
-#footer > p {
-    margin: 0;
-    color: var(--secondary);
-}
-
 /**********************
 * Mobile Styling *
 ***********************/
@@ -402,13 +426,21 @@ footer{
         margin: 0 1rem 0 auto;
     }
 
-    #hLine{
+    #h-line{
         bottom: 3.5rem;
         position: fixed;
     }
 
     .home{
         margin-top: 50%;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    h2{
+        font-size: 2rem;
     }
 
     #description{
@@ -466,5 +498,6 @@ footer{
         left: revert;
         bottom: revert;
         text-align: right;
+        margin: 10px 10px 0 0;
     }
 }
