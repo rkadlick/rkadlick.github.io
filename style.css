@@ -186,7 +186,7 @@ i{
     transition: all 0.7s;
 }
 
-.project-tile:hover{
+.project-tile:hover, .project-tile:active{
     box-shadow: none;
     opacity: 1;
     border: solid var(--secondary) 1px;
@@ -313,9 +313,9 @@ font-weight: 400;
 .link-tile{
     width: 50%;
     margin: 1rem auto;
-    box-shadow: 5px 5px 0px 2px var(--secondary);
+    box-shadow: 5px 5px 0px 2px var(--tertiary);
     padding: 0.5rem 0.5rem;
-    border: solid var(--secondary);
+    border: solid var(--tertiary);
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -398,6 +398,10 @@ footer{
         margin: 3px;
     }
 
+    #sun,#moon{
+        margin: 0 1rem 0 auto;
+    }
+
     #hLine{
         bottom: 3.5rem;
         position: fixed;
@@ -420,6 +424,8 @@ footer{
         justify-content: space-around;
         position: absolute;
         bottom: 3.5rem;
+        width: 100%;
+        margin-left: 0;
     }
 
     .flexbox{
