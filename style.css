@@ -91,7 +91,7 @@ footer{
 ***********************/
 
 .hide{
-    display: none;
+    display: none !important; 
 }
 
 .watermark1, .watermark2 {
@@ -157,6 +157,9 @@ footer{
     height: 1px;
 }
 
+#white-box{
+    display: none;
+}
 /**********************
 * Section - Home *
 ***********************/
@@ -207,11 +210,11 @@ footer{
 .flexbox{
     display: flex;
     width: 100%;
+    flex-direction: column;
   }
   
 .project-tile{
-    width: 100%;
-    margin: 1rem;
+    margin: 1rem 0rem;
     box-shadow: 5px 5px 0px 2px var(--tertiary);
     padding: 0rem .5rem;
     border: solid var(--tertiary);
@@ -240,8 +243,8 @@ footer{
     cursor: pointer;
 }
 
-.project-tile > a{
-    color: var(--primary);;
+.project-link{
+    color: var(--primary);
 }
 
 .filter{
@@ -287,6 +290,12 @@ footer{
     float: right;
     margin-right: 1rem;
     padding: 7px 7px 4px 7px;
+}
+
+#link-list{
+    margin: 0;
+    list-style: none;
+    padding: 0;
 }
 
     /**********************
@@ -341,6 +350,16 @@ footer{
         #uiux.pressed, #uiux.inner-item{
             color: var(--background);
             background-color: var(--yellow);
+        }
+
+        #adobe{
+            color: var(--green);
+            border: solid 2px var(--green);
+        }
+
+        #adobe.pressed, #adobe.inner-item{
+            color: var(--background);
+            background-color: var(--green);
         }
 
 /**********************
@@ -398,9 +417,13 @@ footer{
 
 
 @media screen and (max-width: 660px) {
+    .watermark1, .watermark2{
+        opacity: 0.04;
+    }
     .watermark1{
         bottom: 0;
         top: revert;
+        z-index: 2;
     }
     .watermark2{
         left: 1.5rem;
@@ -420,6 +443,7 @@ footer{
         width: 100%;
         padding: 0px;
         margin: 3px;
+        z-index: 2;
     }
 
     #sun,#moon{
@@ -429,6 +453,7 @@ footer{
     #h-line{
         bottom: 4rem;
         position: fixed;
+        z-index: 2;
     }
 
     .home{
@@ -447,6 +472,17 @@ footer{
         margin-top: 50%;
     }
 
+    #white-box{
+        background-color: var(--background);
+        width: 100%;
+        height: 10.5rem;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+        box-shadow: 0px 2px 14px 3px var(--tertiary);
+        display: block;
+    }
+
     .filter-item{
         margin: 0.25rem;
     }
@@ -454,27 +490,32 @@ footer{
     #filter-list{
         flex-wrap: wrap;
         justify-content: space-around;
-        position: absolute;
         bottom: 3.5rem;
         width: 100%;
         margin-left: 0;
+        z-index: 2;
+        position: fixed;
     }
 
     .flexbox{
-        position: absolute;
-        bottom: 7.5rem;
+        margin-top: 3.5rem;
+        max-height: 28rem;
+        overflow: scroll;
+    }
+
+    .project-tile{
+        margin: 0.5rem;
     }
 
     .project-title{
         width: 100%;
         text-align: center;
-        margin: revert;
-        margin-bottom: 0;
+        margin: 1rem 0 0 0;
     }
 
     #inner-list{
         width: 100%;
-        margin: revert;
+        margin: 0.5rem 0;
         justify-content: center;
     }
 
