@@ -211,6 +211,7 @@ footer{
     display: flex;
     width: 100%;
     flex-direction: column;
+    margin-bottom: 12rem;
   }
   
 .project-tile{
@@ -415,6 +416,7 @@ footer{
 * Mobile Styling *
 ***********************/
 
+/*
 @media screen and (max-height: 1000px) and (min-height: 901px){
     .flexbox{
         height: 48rem;
@@ -450,6 +452,7 @@ footer{
         height: 18rem;
     }
 }
+*/
 
 @media screen and (max-width: 660px) {
     .watermark1, .watermark2{
@@ -533,7 +536,6 @@ footer{
     }
 
     .flexbox{
-        margin-top: 3.5rem;
         overflow: scroll;
     }
 
@@ -573,6 +575,6 @@ footer{
         left: revert;
         bottom: revert;
         text-align: right;
-        margin: 10px 10px 0 0;
+        padding: 10px 10px 0 0;
     }
 }

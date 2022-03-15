@@ -59,6 +59,7 @@ navArray.forEach(function(nav){
 });
 
 function pageSelection(page) {
+  var footer = document.querySelector('.footer');
   var id = page.id;
   var section = document.querySelector("."+id+".section");
   //console.log(page);
@@ -74,6 +75,11 @@ function pageSelection(page) {
     }
   }
   section.classList.remove("hide");
+  if(id === 'projects' && screen.width <= 660){
+    footer.classList.add("hide");
+  }else{
+    footer.classList.remove("hide");
+  }
 
   navArray.forEach(function(nav){
     if(nav.classList.contains("current")){
