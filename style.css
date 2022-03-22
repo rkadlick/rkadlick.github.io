@@ -536,9 +536,13 @@ footer{
         position: fixed;
     }
 
-    .flexbox{
-        overflow: scroll;
+    .container{
+        overflow-y: scroll;
     }
+
+    /*.flexbox{
+        overflow: scroll;
+    }*/
 
     .project-tile{
         margin: 0.5rem;
