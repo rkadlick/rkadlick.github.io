@@ -237,7 +237,6 @@ footer{
 
 .project-tile:hover, .project-tile:active{
     box-shadow: none;
-    opacity: 1;
     border: solid var(--secondary) 1px;
 }
   
@@ -322,6 +321,10 @@ footer{
     margin: 0;
     list-style: none;
     padding: 0;
+}
+
+#link-list > li{
+    padding: 3px 0;
 }
 
     /**********************
@@ -441,44 +444,6 @@ footer{
 * Mobile Styling *
 ***********************/
 
-/*
-@media screen and (max-height: 1000px) and (min-height: 901px){
-    .flexbox{
-        height: 48rem;
-    }
-}
-
-@media screen and (max-height: 900px ) and (min-height: 801px){
-    .flexbox{
-        height: 42rem;
-    }
-}
-
-@media screen and (max-height: 800px) and (min-height: 701px){
-    .flexbox{
-        height: 36rem;
-    }
-}
-
-@media screen and (max-height: 700px ) and (min-height: 601px){
-    .flexbox{
-        height: 30rem;
-    }
-}
-
-@media screen and (max-height: 600px ) and (min-height: 501px){
-    .flexbox{
-        height: 24rem;
-    }
-}
-
-@media screen and (max-height: 500px ) and (min-height: 401px){
-    .flexbox{
-        height: 18rem;
-    }
-}
-*/
-
 @media screen and (max-width: 660px) {
     .watermark1, .watermark2{
         opacity: 0.04;
@@ -570,6 +535,17 @@ footer{
 
     .project-tile{
         margin: 0.5rem;
+        transition: all 0.5s;
+    }
+
+    .project-tile:hover{
+        box-shadow: 5px 5px 0px 2px var(--tertiary);
+        border: solid var(--tertiary);
+    }
+
+    .project-tile.mobile{
+        box-shadow: none;
+        border: solid var(--secondary) 1px;
     }
 
     .project-title{

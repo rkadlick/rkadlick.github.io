@@ -51,6 +51,7 @@ let navItems = document.querySelectorAll('.nav-link');
 //console.log(navItems);
 let navArray = Array.prototype.slice.call(navItems);
 //console.log(navArray);
+let site = document.getElementById('site');
 
 navArray.forEach(function(nav){
   nav.addEventListener("click", function () {
@@ -75,7 +76,7 @@ function pageSelection(page) {
     }
   }
   section.classList.remove("hide");
-  if(id === 'projects' && screen.width <= 660){
+  if(id === 'projects' && site.offsetWidth <= 660){
     footer.classList.add("hide");
   }else{
     footer.classList.remove("hide");
@@ -164,6 +165,12 @@ projectsArray.forEach(function(proj){
 
 function showProject(proj){
   //console.log(proj);
+
+  if(proj.classList.contains("mobile")){
+    proj.classList.remove("mobile")
+  }else{
+    proj.classList.add("mobile")
+  }
 
   var children = proj.children;
   //console.log(children);
