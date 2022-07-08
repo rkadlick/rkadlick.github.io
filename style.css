@@ -116,7 +116,7 @@ html{
 }
 
 .topnav > a:hover{
-    color: var(--secondary);
+    color: var(--tertiary);
 }
 
 #home{
