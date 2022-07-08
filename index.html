@@ -3,11 +3,11 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html id="site">
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Portfolio</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -15,134 +15,123 @@
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    
-        <div class="watermark1">RYAN</div>
-        <div class="watermark2">RYAN</div>
-        <nav>
-            <a class="nav-link logo" id="home"><img id="r-logo" src="imgs/logoR.svg"></a>
-            <a class="nav-link current" id="home">Home</a>
-            <a class="nav-link" id="about">About Me</a>
-            <a class="nav-link" id="projects">Projects</a>
-            <a class="nav-link" id="links">Links</a>
-            <img class="dark-mode" id="moon" src="imgs/moon.svg" />
-            <img class="dark-mode hide" id="sun" src="imgs/sun.svg" />
-        </nav>
-        <div id="h-line"></div>
-       <div class="home section">
-           <h1 id="name">Ryan Kadlick</h1>
-           <h2 id="title">Designer | Developer</h2>
-           <!-- <div class="icons hide">
-
-            <a href="https://www.linkedin.com/in/ryankadlick/">
-                <i class="fab fa-linkedin" id="linkedin"></i>
-                <span class="label">LinkedIn</span>
-            </a>
-            <a href="https://github.com/rkadlick">
-                <i class="fab fa-github" id="github"></i>
-                <span class="label">GitHub</span>
-            </a>
-            <a href="https://codepen.io/rykadlick">
-                <i class="fab fa-codepen" id="codepen"></i>
-                <span class="label">CodePen</span>
-            </a>
-            <a href="https://www.freecodecamp.org/rymk">
-                <i class="fab fa-free-code-camp" id="fcc"></i>
-                <span class="label">FCC</span>
-            </a>
-        </div> -->
-       </div>
-
-
-       <main>
-           <section class="about section hide">
-               <p id="description">I am a current graduate student persuing a Masters degree in Computer Science at University of Massachusetts - Boston that is looking to pursue a career in design and development. I had real life experience creating and designing a user experience during my years at school and am continuing to do so now in my current jobs. Challenges and adventure excite me, I would love to learn more and grow as a person in a variety of different work settings. I appreciate all opportunities that would deepen my current understanding and help me learn something new.</p>
-           </section>
-           <section class="projects section hide">
-             <div id="white-box"></div>
-               <ul id="filter-list">
-                   <li class="filter-item" id="html">HTML</li>
-                   <li class="filter-item" id="css">CSS</li>
-                   <li class="filter-item" id="js">Javascript</li>
-                   <li class="filter-item" id="java">Java</li>
-                   <li class="filter-item" id="uiux">UI/UX</li>
-                   <li class="filter-item" id="adobe">Adobe CC</li>
-               </ul>
-               <div class="container">
-               <div class="flexbox">
-
-                  <div class="project-tile html css uiux">
-                  <h4 class="project-title">Roommate Finder Application<i class="fas fa-chevron-down"></i></h4>
-                  <ul id="inner-list">
-                    <li class="inner-item" id="uiux">UI/UX</li>
-                    <li class="inner-item" id="css">CSS</li>
-                    <li class="inner-item" id="html">HTML</li>
-                  </ul>
-                  <a href="https://sites.google.com/view/umbfinders/home/home" target="_blank" class="project-link hide">View Project</a>
-                <p class="project-info hide">In this project I worked in a team of 3 to design and implement a User Interface. We decided to build an interface for a mobile application where users can search for potential roommates in their local area. The final implementation was created in HTML and CSS, it was created for a mobile screen, but is also responsive to a desktop.</p>
-                  </div>
-                  <div class="project-tile adobe">
-                    <h4 class="project-title">Branding Projects<i class="fas fa-chevron-down"></i></h4>
-                    <ul id="inner-list">
-                      <li class="inner-item" id="adobe">Adobe CC</li>
-                    </ul>
-                    <ul class="project-link hide" id="link-list">
-                      <li><a href="pdfs/timeless.pdf" target="_blank" class="project-link ">Timeless Grind</a></li>
-                      <li><a href="pdfs/turtle.pdf" target="_blank" class="project-link ">Sea Turtle Conservatory</a></li>
-                      <li><a href="pdfs/infinity.pdf" target="_blank" class="project-link ">Infinity Clothing</a></li>
-                      <li><a href="pdfs/neptune.pdf" target="_blank" class="project-link ">Neptune's Kitchen</a></li>
-                      <li><a href="pdfs/ultra.pdf" target="_blank" class="project-link ">Ultra Music Festival</a></li>
-                    </ul>
-                  <p class="project-info hide">The above projects were all created by myself using a combination of Adobe InDesign, Adobe Illustrator, and Adobe Photoshop. They represent either a rebrand of a current company (Sea Turtle Conservatory and Ultra Music Festival) or a fictional company created by myself (Infinity, Timeless Grind, and Neptune's Kitchen). The pdfs are either a style guide for the company or a showcase of mockups created.</p>
-                  </div>
-
-                </div></div>
-
-           </section>
-           <section class="links section hide">
-
-              <div class="link-tile">
-                <a class="link-link" href="https://www.linkedin.com/in/ryankadlick/">
-                  <span class="link-spanner"></span>
-                </a>
-                <h4 class="link-title"><i class="fab fa-linkedin"></i> LinkedIn</h4>
-              </div>
-              <div class="link-tile">
-                <a class="link-link" href="https://github.com/rkadlick">
-                  <span class="link-spanner"></span>
-                </a>
-                <h4 class="link-title"><i class="fab fa-github"></i> GitHub</h4>
-              </div>
-              <div class="link-tile">
-                <a class="link-link" href="https://codepen.io/rykadlick">
-                  <span class="link-spanner"></span>
-                </a>
-                <h4 class="link-title"><i class="fab fa-codepen"></i> CodePen</h4>
-              </div>
-              <div class="link-tile">
-                <a class="link-link" href="https://www.freecodecamp.org/rymk">
-                  <span class="link-spanner"></span>
-                </a>
-                <h4 class="link-title"><i class="fab fa-free-code-camp"></i> FreeCodeCamp</h4>
-              </div>
-
-           </section>
-       </main>
-
-       <footer class="footer">
-           <div id="footer">
+        <main id="body">
+            <!--[if lt IE 7]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <div class="watermark1">RYAN</div>
+            <div class="watermark2">RYAN</div>
+            <div class="topnav">
+                <a class="nav-link logo" id="home"><img id="r-logo" src="imgs/logoR1.svg"></a>
+                <a class="nav-link" id="experience-nav">Experience</a>
+                <a class="nav-link" id="projects-nav">Projects</a>
+                <svg width="35px" height="100%" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                    <rect id="Artboard1" x="0" y="0" width="50" height="50" style="fill:none;" />
+                    <clipPath id="_clip1">
+                        <rect id="Artboard11" serif:id="Artboard1" x="0" y="0" width="50" height="50" />
+                    </clipPath>
+                    <g clip-path="url(#_clip1)">
+                        <g class="dark-mode" id="Sun">
+                            <path d="M26.964,2.228c0,-1.084 -0.88,-1.964 -1.964,-1.964c-1.084,0 -1.964,0.88 -1.964,1.964l0,4.25c0,1.084 0.88,1.964 1.964,1.964c1.084,0 1.964,-0.88 1.964,-1.964l0,-4.25Z" />
+                            <path d="M26.964,43.522c0,-1.084 -0.88,-1.964 -1.964,-1.964c-1.084,0 -1.964,0.88 -1.964,1.964l0,4.25c0,1.084 0.88,1.964 1.964,1.964c1.084,0 1.964,-0.88 1.964,-1.964l0,-4.25Z" />
+                            <path d="M42.491,10.286c0.766,-0.766 0.766,-2.01 0,-2.777c-0.767,-0.766 -2.011,-0.766 -2.777,0l-3.006,3.006c-0.766,0.766 -0.766,2.01 0,2.777c0.767,0.766 2.011,0.766 2.777,0l3.006,-3.006Z" />
+                            <path d="M13.292,39.485c0.766,-0.766 0.766,-2.01 0,-2.777c-0.767,-0.766 -2.011,-0.766 -2.777,0l-3.006,3.006c-0.766,0.766 -0.766,2.01 0,2.777c0.767,0.766 2.011,0.766 2.777,0l3.006,-3.006Z" />
+                            <path d="M47.772,26.964c1.084,0 1.964,-0.88 1.964,-1.964c0,-1.084 -0.88,-1.964 -1.964,-1.964l-4.25,0c-1.084,0 -1.964,0.88 -1.964,1.964c0,1.084 0.88,1.964 1.964,1.964l4.25,0Z" />
+                            <path d="M6.478,26.964c1.084,0 1.964,-0.88 1.964,-1.964c0,-1.084 -0.88,-1.964 -1.964,-1.964l-4.25,0c-1.084,0 -1.964,0.88 -1.964,1.964c0,1.084 0.88,1.964 1.964,1.964l4.25,0Z" />
+                            <path d="M39.714,42.491c0.766,0.766 2.01,0.766 2.777,0c0.766,-0.767 0.766,-2.011 0,-2.777l-3.006,-3.006c-0.766,-0.766 -2.01,-0.766 -2.777,0c-0.766,0.767 -0.766,2.011 0,2.777l3.006,3.006Z" />
+                            <path d="M10.515,13.292c0.766,0.766 2.01,0.766 2.777,0c0.766,-0.767 0.766,-2.011 0,-2.777l-3.006,-3.006c-0.766,-0.766 -2.01,-0.766 -2.777,0c-0.766,0.767 -0.766,2.011 0,2.777l3.006,3.006Z" />
+                            <circle cx="25.121" cy="25.031" r="12.398" />
+                        </g>
+                        <path class="dark-mode hide" id="Moon" d="M19.85,0.264c-2.985,3.435 -4.792,7.92 -4.792,12.823c0,10.799 8.767,19.566 19.565,19.566c6.235,0 11.793,-2.923 15.377,-7.472c-0.238,13.592 -11.348,24.555 -24.998,24.555c-13.799,0 -25.002,-11.203 -25.002,-25.002c0,-12.033 8.519,-22.092 19.85,-24.47Z" />
+                    </g>
+                </svg>
+            </div>
+            <section id="about">
+                <h1>Hi, I'm Ryan</h1>
+                <p>I am a developer and designer. I recently graduated from UMASS Boston with a Master's degree in Computer Science and am currently pursuing a new opportunity to advance my career.</p>
+                <p>If you wish to contact me or view more of my work, use the links below.</p>
+                <div id="about-links">
+                    <a class="about-link" href="https://www.linkedin.com/in/ryankadlick/">LinkedIn</a>
+                    <a class="about-link" href="https://github.com/rkadlick">GitHub</a>
+                    <a class="about-link" href="https://codepen.io/rykadlick">CodePen</a>
+                    <a class="about-link" href="https://www.freecodecamp.org/rymk">FCC</a>
+                </div>
+            </section>
+            <section id="experience">
+                <h2>Experience</h2>
+                <ul>
+                    <li>
+                        <h3>Website Developer</h3>
+                        <div class="exp-job">
+                            <div>Ticket2Beauty</div>
+                            <div>5/19 - 9/19</div>
+                        </div>
+                        <p>Worked in a small team at this startup to prepare the company's website for launch, a combination of WordPress and custom HTML/JS.</p>
+                    </li>
+                    <li>
+                        <h3>WordPress Developer</h3>
+                        <div class="exp-job">
+                            <div>FastTrek</div>
+                            <div>1/18 - 1/19</div>
+                        </div>
+                        <p>I was the sole developer tasked with building and helping design their dynamic website from their original WordPress template. <a class="text-link" href="https://fasttrek.org/">Link</a></p>
+                    </li>
+                </ul>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>
+                        <div class="project-container">
+                            <h3>Roommate Finder Application</h3>
+                            <p class="project-code">
+                                <a class="project-link" href="https://github.com/KisanThapa/CS-615-UI-UX">
+                                    source
+                                </a>
+                                <a class="project-link" href="https://kisanthapa.github.io/CS-615-UI-UX/launch/launch.html">
+                                    live
+                                </a>
+                            </p>
+                        </div>
+                        <p>In this project I worked in a team of 3 to design and implement a User Interface. We decided to build an interface for a mobile application where users can search for potential roommates in their local area. The final implementation was created in HTML and CSS, it was created for a mobile screen, but is also responsive to a desktop.</p>
+                    </li>
+                    <li>
+                        <div class="project-container">
+                            <h3>Brand Design</h3>
+                            <p class="project-code">
+                                <a class="project-link" href="pdfs/turtle.pdf" target="_blank">STC</a>
+                                <a class="project-link" href="pdfs/timeless.pdf" target="_blank">TG</a>
+                                <a class="project-link" href="pdfs/infinity.pdf" target="_blank">IC</a>
+                                <a class="project-link" href="pdfs/neptune.pdf" target="_blank">NK</a>
+                                <a class="project-link" href="pdfs/ultra.pdf" target="_blank">UMF</a>
+                            </p>
+                        </div>
+                        <p>These projects were all created by myself using a combination of Adobe InDesign, Adobe Illustrator, and Adobe Photoshop. They represent either a rebrand of a current company (Sea Turtle Conservatory and Ultra Music Festival) or a fictional company created by myself (Infinity, Timeless Grind, and Neptune's Kitchen). The pdfs are either a style guide for the company or a showcase of mockups created. Click the above buttons to view them.</p>
+                    </li>
+                    <li>
+                        <div class="project-container">
+                            <h3>ryanismy.name</h3>
+                            <p class="project-code">
+                                <a class="project-link" href="https://github.com/rkadlick/rkadlick.github.io">
+                                    source
+                                </a>
+                            </p>
+                        </div>
+                        <p>This website you are on.</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <div id="footer">
                 <p>Ryan Kadlick &#169;</p>
                 <p>All Rights Reserved - 2022</p>
-           </div>
-       </footer>
-
-
+            </div>
+        </footer>
     </body>
-
 </html>
 <script src="js/script.js"></script>
