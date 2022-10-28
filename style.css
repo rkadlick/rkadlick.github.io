@@ -15,8 +15,8 @@
 }
 
 :root{
-    --background: #eeeeee;
-    --nav: rgba(238, 238, 238, .8);
+    --background: #fdfdfd;
+    --nav: rgba(253, 253, 253, .8);
 
     --primary: #111111;
     --secondary: #595959;
@@ -37,7 +37,7 @@
     --background: #111111;
     --nav: rgba(17, 17, 17, .8);
 
-    --primary: #eeeeee;
+    --primary: #fdfdfd;
     --secondary: #a6a6a6;
     --tertiary: #6c6c6c;
 
@@ -108,6 +108,7 @@ html{
     position: sticky;
     position: -webkit-sticky;
     background-color: var(--nav);
+    z-index: 1000;
 }
 
 .topnav > a{
@@ -172,14 +173,13 @@ h1{
 
 h2{
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h3{
     font-size: 1.15em;
     font-weight: 500;
-    margin-top: 1em;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 section{
@@ -193,6 +193,7 @@ ul{
 
 li{
     border-bottom: var(--tertiary) 2px solid;
+    margin-top: 2rem;
 }
 
 .about-link{
@@ -231,18 +232,32 @@ li{
     text-decoration: none;
     transition: all 0.5s; 
     cursor: pointer;
+    display: flex;
+    gap: 0.25rem;
 }
 
 .project-container{
     display: flex;   
+    justify-content: space-between;
+}
+
+.project-title > span{
+    color: var(--secondary);
+    font-style: italic;
 }
 
 .project-code{
-    margin: 1em 0 0 auto;
+    margin: auto 0;
+    display: flex;
 }
 
 .project-link{
     margin: 0 0 .25em 1em;
+}
+
+.project-icon{
+    width: 1rem;
+    z-index: 1;
 }
 
 footer{
