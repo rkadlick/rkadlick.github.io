@@ -53,7 +53,8 @@
 }
 
 *{
-    transition: all 0.5s;
+    transition: all 0.5s ;
+    -webkit-transition: all 0.3s;
 }
 
 html{
@@ -130,20 +131,21 @@ html{
     cursor: pointer;
 }
 
-#Moon, #Sun{
+.dark-toggle{
     width: 35px;
+    height: 35px;
     cursor: pointer;
     transition: all 1s;
 }
 
-#Sun{
+.sun{
     color: var(--primary);
     fill: var(--primary);
     transform-origin: center;
     transform-box: fill-box;
 }
 
-#Moon{
+.moon{
     color: var(--primary);
     fill: var(--primary);
     transform-origin: center;
@@ -305,12 +307,26 @@ footer{
         font-size: 1em;
     }
 
-    .project-code{
+    .topnav > a{
+        margin-right: 1em;
+    }
+
+    .project-title{
         width: 60%;
     }
 
+    .project-code{
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
     .project-link{
-        float: right;
+        text-align: center;
+    }
+
+    .project-icon{
+        height: 0.9rem;
+        width: 0.9rem;
     }
 
 }
