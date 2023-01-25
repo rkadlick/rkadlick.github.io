@@ -110,6 +110,8 @@ html{
     position: -webkit-sticky;
     background-color: var(--nav);
     z-index: 1000;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .topnav > a{
